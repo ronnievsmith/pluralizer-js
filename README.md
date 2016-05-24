@@ -1,4 +1,4 @@
-# [pluralater.js](http://rack.pub/pluralater.min.js/)
+# [pluralater.js](http://rack.pub/pluralater.min.js)
 ### Synopsis
 
 Pluralater (5.48 KB) takes data in the form of quantity, item name and returns the plural form of item name if quantity is 2 or more.  Pluralater.js returns 2 public methods - read and format, and one public property, help. 
