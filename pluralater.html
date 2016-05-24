@@ -27,7 +27,7 @@
         </section>
         <script>
             
-        //Revealing Module Pattern (Public & Private) w Public Namespace 'clock'
+        //Revealing Module Pattern (Public & Private) w Public Namespace 'pluralater'
         var pluralater = (function() {
             var pub = {};
             var r = 'pluralater.js error';
@@ -38,6 +38,7 @@
                     return Object.prototype.toString.call(arg) === '[object Array]';
                 };
             }
+            //creates .endsWith() if it's not natively available
             if (!String.prototype.endsWith) {
                 String.prototype.endsWith = function(searchString, position) {
                     var subjectString = this.toString();
