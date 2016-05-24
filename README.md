@@ -9,7 +9,7 @@ pluralater.read([[2,'orange'],[3,'peach'],[5,'cherry']]) --> '2 oranges, 3 peach
 pluralater.format([3,'couch']) --> '[3, 'couches']'
 pluralater.help --> "Pluralater.js returns 2 public methods - read and format.  Pluralater.read expects an array of arrays, each with quantity and item name, e.g. pluralater.read([[2,'orange'],[3,'peach'],[5,'cherry']]) returns string '2 oranges, 3 peaches, and 5 cherries.'.  Pluralater.format expects an array with quantity and item name, e.g., pluralater.format([3,'couch']) returns array '[3, 'couches']'"
 ```
-> :clapper: read returns a string with an Oxford comma in arrays of 3 or more items.
+> :apple: read returns a string with an Oxford comma in arrays of 3 or more items.
 
 ### Motivation
 
