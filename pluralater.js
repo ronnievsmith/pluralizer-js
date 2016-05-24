@@ -1,3 +1,10 @@
+/*
+pluralater.js v0.1 - Add-on tool for JavaScript that returns plural form of English words
+Created by Ron Royston, https://rack.pub
+https://github.com/rhroyston/pluralater-js
+License: MIT
+*/
+
 //Revealing Module Pattern (Public & Private) w Public Namespace 'pluralater'
 var pluralater = (function() {
     var pub = {};
