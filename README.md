@@ -19,9 +19,9 @@ I needed to automate a summary of input items.  Items with qty 2 and up need to 
 
 :checkered_flag: Load via rack.pub's global CDN
 
-`<script src="https://rack.pub/pluralater.js"></script>`
+`<script src="https://rack.pub/pluralater.min.js"></script>`
 
-:rocket:  Embed pluralater.js in your javascript when putting in production for best page loading performance.
+:rocket:  Embed pluralater.min.js in your javascript when putting in production for best page loading performance.
 
 ### API Reference
 
