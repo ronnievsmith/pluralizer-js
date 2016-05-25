@@ -5,6 +5,8 @@ https://github.com/rhroyston/pluralizer-js
 License: MIT
 */
 
+var testArray = [[2,'orange'],[3,'peach'],[5,'cherry']];
+
 //Revealing Module Pattern (Public & Private) w Public Namespace 'pluralizer'
 var pluralizer = (function() {
     var pub = {};
