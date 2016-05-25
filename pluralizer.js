@@ -1,14 +1,14 @@
 /*
-pluralater.js v0.1 - Add-on tool for JavaScript that returns plural form of English words
+pluralizer.js v0.1 - Add-on tool for JavaScript that returns plural form of English words
 Created by Ron Royston, https://rack.pub
-https://github.com/rhroyston/pluralater-js
+https://github.com/rhroyston/pluralizer-js
 License: MIT
 */
 
-//Revealing Module Pattern (Public & Private) w Public Namespace 'pluralater'
-var pluralater = (function() {
+//Revealing Module Pattern (Public & Private) w Public Namespace 'pluralizer'
+var pluralizer = (function() {
     var pub = {};
-    var r = 'pluralater.js error';
+    var r = 'pluralizer.js error';
     var expectedArrayOfArrays = {name:r, message:'Invalid argument.  Expected array of arrays'};
     //creates Array.isArray() if it's not natively available
     if (!Array.isArray) {
@@ -164,7 +164,7 @@ var pluralater = (function() {
     doc.addEventListener("DOMContentLoaded", function(event) {
         
     });
-    pub.help = "Pluralater.js returns 2 public methods - read and format.  Pluralater.read expects an array of arrays, each with quantity and item name, e.g. pluralater.read([[2,'orange'],[3,'peach'],[5,'cherry']]) returns string '2 oranges, 3 peaches, and 5 cherries.'.  Pluralater.format expects an array with quantity and item name, e.g., pluralater.format([3,'couch']) returns array '[3, 'couches']'"
+    pub.help = "pluralizer.js returns 2 public methods - read and format.  pluralizer.read expects an array of arrays, each with quantity and item name, e.g. pluralizer.read([[2,'orange'],[3,'peach'],[5,'cherry']]) returns string '2 oranges, 3 peaches, and 5 cherries.'.  pluralizer.format expects an array with quantity and item name, e.g., pluralizer.format([3,'couch']) returns array '[3, 'couches']'"
     pub.read = function (arr) {
         if(isArrayOfArrays(arr)){
             var count = arr.length;
@@ -173,13 +173,13 @@ var pluralater = (function() {
             switch (count) {
                 //if arr has 1 item is 1 apple (no and no commas)
                 case 1:
-                    temp[0] = pluralater.format(arr[0]);
+                    temp[0] = pluralizer.format(arr[0]);
                     str = temp[0][0] + ' ' + temp[0][1];
                     break;
                 //if arr has 2 items it's 1 apple and 2 oranges (no commas but an and)
                 case 2:
-                    temp[0] = pluralater.format(arr[0]);
-                    temp[1] = pluralater.format(arr[1]);
+                    temp[0] = pluralizer.format(arr[0]);
+                    temp[1] = pluralizer.format(arr[1]);
                     str = temp[0][0] + ' ' + temp[0][1] + ' and ' + temp[1][0] + ' ' + temp[1][1];
                     break;
                 //if arr has 3 items or more it's 1 apple, 2 oranges, and 3 cherries (the last item has an 'and ' put before it)
@@ -187,7 +187,7 @@ var pluralater = (function() {
                     // for each item in array output format it and concatentate it to a string
                     var arrayLength = arr.length;
                     for (var i = 0; i < arrayLength; i++) {
-                        temp = pluralater.format(arr[i]);
+                        temp = pluralizer.format(arr[i]);
                         //if this is 2nd last item append with ', and '
                         if (i === arrayLength - 2){
                             str += temp[0] + ' ' + temp[1] + ', and ';

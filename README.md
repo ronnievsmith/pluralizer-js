@@ -1,13 +1,13 @@
-# [pluralater.js](http://rack.pub/pluralater.min.js)
+# [pluralizer.js](http://rack.pub/pluralizer.min.js)
 ### Synopsis
 
-Pluralater (5.48 KB) takes data in the form of quantity, item name and returns the plural form of item name if quantity is 2 or more.  Pluralater.js returns 2 public methods - read and format, and one public property, help. 
+Pluralizer (5.48 KB) takes data in the form of quantity, item name and returns the plural form of item name if quantity is 2 or more.  pluralizer.js returns 2 public methods - read and format, and one public property, help. 
 
 ### Code Example
 ```
-pluralater.read([[2,'orange'],[3,'peach'],[5,'cherry']]) --> '2 oranges, 3 peaches, and 5 cherries.'.
-pluralater.format([3,'couch']) --> '[3, 'couches']'
-pluralater.help --> "Pluralater.js returns 2 public methods - read and format.  Pluralater.read expects an array of arrays, each with quantity and item name, e.g. pluralater.read([[2,'orange'],[3,'peach'],[5,'cherry']]) returns string '2 oranges, 3 peaches, and 5 cherries.'.  Pluralater.format expects an array with quantity and item name, e.g., pluralater.format([3,'couch']) returns array '[3, 'couches']'"
+pluralizer.read([[2,'orange'],[3,'peach'],[5,'cherry']]) --> '2 oranges, 3 peaches, and 5 cherries.'.
+pluralizer.format([3,'couch']) --> '[3, 'couches']'
+pluralizer.help --> "pluralizer.js returns 2 public methods - read and format.  pluralizer.read expects an array of arrays, each with quantity and item name, e.g. pluralizer.read([[2,'orange'],[3,'peach'],[5,'cherry']]) returns string '2 oranges, 3 peaches, and 5 cherries.'.  pluralizer.format expects an array with quantity and item name, e.g., pluralizer.format([3,'couch']) returns array '[3, 'couches']'"
 ```
 > :apple: read returns a string with an Oxford comma in arrays of 3 or more items.
 
@@ -19,16 +19,16 @@ I needed to automate a summary of input items.  Items with qty 2 and up need to 
 
 :checkered_flag: Load via rack.pub's global CDN
 
-`<script src="https://rack.pub/pluralater.min.js"></script>`
+`<script src="https://rack.pub/pluralizer.min.js"></script>`
 
-:rocket:  Embed pluralater.min.js in your javascript when putting in production for best page loading performance.
+:rocket:  Embed pluralizer.min.js in your javascript when putting in production for best page loading performance.
 
 ### API Reference
 
 ```
-pluralater.read([[2,'orange'],[3,'peach'],[5,'cherry']]) --> '2 oranges, 3 peaches, and 5 cherries.'.
-pluralater.format([3,'couch']) --> '[3, 'couches']'
-pluralater.help --> "Pluralater.js returns 2 public methods - read and format.  Pluralater.read expects an array of arrays, each with quantity and item name, e.g. pluralater.read([[2,'orange'],[3,'peach'],[5,'cherry']]) returns string '2 oranges, 3 peaches, and 5 cherries.'.  Pluralater.format expects an array with quantity and item name, e.g., pluralater.format([3,'couch']) returns array '[3, 'couches']'"
+pluralizer.read([[2,'orange'],[3,'peach'],[5,'cherry']]) --> '2 oranges, 3 peaches, and 5 cherries.'.
+pluralizer.format([3,'couch']) --> '[3, 'couches']'
+pluralizer.help --> "pluralizer.js returns 2 public methods - read and format.  pluralizer.read expects an array of arrays, each with quantity and item name, e.g. pluralizer.read([[2,'orange'],[3,'peach'],[5,'cherry']]) returns string '2 oranges, 3 peaches, and 5 cherries.'.  pluralizer.format expects an array with quantity and item name, e.g., pluralizer.format([3,'couch']) returns array '[3, 'couches']'"
 ```
 
 ### Contribute
