@@ -19,8 +19,8 @@ Pluralizer.js returns 2 public methods `.read` and `.run`, and one public proper
 
 ### Contribute
 
-If you found a bug, have any questions or want to contribute please let me know, [ron@rack.pub](mailto:ron@rack.pub).
+If you found a bug, have any questions or want to contribute please let me know.
 
 ### License
 
-Ron Royston, [https://rack.pub](https://rack.pub), [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+Ronnie Smith, [https://ronnievsmith.com](https://ronnievsmith.com), [MIT License](https://en.wikipedia.org/wiki/MIT_License)
